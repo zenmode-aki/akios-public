@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#161022" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>あきの入口 🐧</title>
+<style>
+  :root{
+    --bg:#120d1d; --bg2:#1b1430; --ink:#f6f1fb; --muted:#8d80a3;
+    --line:rgba(255,255,255,.10); --glass:rgba(255,255,255,.055);
+    --teal:#2ed3b0; --shadow:0 18px 44px rgba(0,0,0,.42);
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent}
+  body{
+    margin:0; color:var(--ink); line-height:1.8; font-weight:700;
+    font-family:"Hiragino Maru Gothic ProN","Hiragino Sans",system-ui,sans-serif;
+    background:
+      radial-gradient(900px 480px at 12% -8%, rgba(157,123,255,.30), transparent 62%),
+      radial-gradient(760px 420px at 92% 4%, rgba(255,95,158,.22), transparent 60%),
+      radial-gradient(700px 500px at 50% 108%, rgba(46,211,176,.14), transparent 62%),
+      linear-gradient(180deg,var(--bg) 0%, var(--bg2) 100%);
+    background-attachment:fixed;
+    min-height:100vh; display:grid; place-items:center; padding:28px 16px;
+  }
+  main{width:min(560px,100%)}
+  h1{margin:0 0 6px; font-size:clamp(22px,6vw,29px); font-weight:900; letter-spacing:.02em}
+  .sub{margin:0 0 26px; font-size:13px; color:var(--muted)}
+  a.card{
+    display:flex; align-items:center; gap:15px; margin-bottom:13px; padding:19px 18px;
+    text-decoration:none; color:var(--ink); border-radius:22px;
+    background:var(--glass); border:1px solid var(--line); box-shadow:var(--shadow);
+    backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  }
+  a.card:active{transform:translateY(1px)}
+  .e{flex:0 0 auto; width:52px; height:52px; border-radius:17px; display:grid; place-items:center;
+     font-size:25px; background:rgba(255,255,255,.06); border:1px solid var(--line)}
+  .t{font-size:17px; font-weight:900; line-height:1.4}
+  .n{margin-top:3px; font-size:12px; color:var(--muted); font-weight:700}
+  .go{margin-left:auto; font-size:19px; color:var(--muted)}
+  .card.me{background:rgba(46,211,176,.11); border-color:rgba(46,211,176,.28)}
+  .card.me .e{background:rgba(46,211,176,.17); border-color:rgba(46,211,176,.32)}
+  .card.me .go{color:var(--teal)}
+  footer{margin-top:22px; font-size:11.5px; color:var(--muted); line-height:1.9; text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <h1>🐧 あきの入口</h1>
+  <p class="sub">見るのは自分だけ。行き来できるように、ここに並べておく。</p>
+
+  <a class="card me" href="me/">
+    <div class="e">🐧</div>
+    <div>
+      <div class="t">自分PJ</div>
+      <div class="n">いま何に向かって走っているか</div>
+    </div>
+    <div class="go">›</div>
+  </a>
+
+  <a class="card" href="words/">
+    <div class="e">📖</div>
+    <div>
+      <div class="t">名言と価値観</div>
+      <div class="n">名言 1,243 ・ 自分ルール 255 ・ 悩みと答え 171 ・ 本 20</div>
+    </div>
+    <div class="go">›</div>
+  </a>
+
+  <footer>
+    検索には出ないようにしてあります（noindex）。<br />
+    ただし、ここは公開リポジトリ。書けないことは書かない。
+  </footer>
+</main>
+</body>
+</html>
